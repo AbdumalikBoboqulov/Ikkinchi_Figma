@@ -1,0 +1,66 @@
+.About {
+  padding-top: 30px;
+  @include flex;
+}
+.three_circl {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .circle_first {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $color-main-backg;
+  }
+  .circle_second {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $color-0-back;
+  }
+}
+.About_child {
+  padding: 24px;
+  background: $color-main-backg;
+  border-radius: 8px;
+  // max-width: 340px;
+  .About_top {
+    margin-bottom: 56px;
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+  .About_button {
+    h6 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      margin-top: 16px;
+    }
+  }
+}
+.none {
+  display: none;
+}
+@media screen and (min-width: 744px) {
+  .woman {
+    display: block;
+  }
+  .About_cards {
+    display: flex;
+    gap: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .none {
+    display: block;
+  }
+}

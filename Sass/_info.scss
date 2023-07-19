@@ -1,0 +1,128 @@
+.info {
+  background: $color-0-back;
+}
+.info_section {
+  @include flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.info_right {
+  .info_top {
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      text-align: center;
+      line-height: 32px;
+      letter-spacing: -0.1px;
+      color: $color-fff;
+      margin-top: 14px;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: 0.1px;
+      margin-top: 14px;
+      color: $color-fff;
+      text-align: center;
+    }
+  }
+}
+.info_bottom {
+  color: $color-fff;
+  @include flex;
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  .info_child {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .circle_smal {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: $color-fff;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .info_section {
+    .info_left {
+      img {
+        max-width: 696px;
+      }
+    }
+  }
+  .info_bottom {
+    font-size: 1.6rem;
+    margin-top: 29px;
+  }
+  .info_right {
+    .info_top {
+      p {
+        margin-top: 29px;
+      }
+      h3 {
+        margin-top: 29px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .info_section {
+    .info_left {
+      img {
+        max-width: 960px;
+      }
+    }
+    .info_right {
+      display: flex;
+      gap: 12.9rem;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      .info_top {
+        h3 {
+          text-align: start;
+          max-width: 415px;
+        }
+        p {
+          text-align: start;
+          max-width: 415px;
+        }
+      }
+      .info_bottom {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .info_section {
+    flex-direction: row;
+    gap: 13.3rem;
+    .info_left {
+      img {
+        width: 503px;
+        height: 428px;
+      }
+      // background-size: 100%;
+    }
+    .info_right {
+      max-width: 503px;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}
