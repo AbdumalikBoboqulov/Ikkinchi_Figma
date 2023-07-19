@@ -138,6 +138,12 @@
   }
 
   .footer_section {
+    .footer_right {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+    }
+
     .footer_left {
       display: flex;
       gap: 8rem;
